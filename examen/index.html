@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/bad6dcbb61.js"></script>
     <script src="https://kit.fontawesome.com/bad6dcbb61.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/animate.css">
+    <script src="js/wow.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- /Bootstrap CSS -->
@@ -16,11 +17,11 @@
     <!-- Teko Font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500%7CTeko:300,400,500%7CMaven+Pro:500" rel="stylesheet">
     <!-- /Teko Font -->
-    <title>26.09 - Last</title>
+    <title>27.09 - Last</title>
   </head>
   <body>
     <!-- PAGE HEADER -->
-  <div class="page">
+  <div class="page animated" style="animation-duration: 500ms;">
   <header class="section page-header">
     <!-- BT Nav-bar -->
     <nav class="navbar navbar-expand-lg m-auto">
@@ -115,43 +116,70 @@
      <section class="section section-sm section-first bg-default">
       <div class="container">
         <div class="oh">
-          <div class="title-decoration-lines wow slideInUp animated">
+          <div class="title-decoration-lines wow slideInUp animated" style="animation-delay: .1s">
             <h6 class="title-decoration-lines-content">What We Offer</h6>
           </div>
         </div>
-        <div class="row row-30 justify-content-center">
-          <div class="col-md-12 col-lg-8">
-            <div class="oh">
-              <article class="box-sportlight slideInDown animated">
-                <a href="" class="box-sportlight-figure"><img src="images/spotlight-1-770x332.jpg" alt=""></a>
-                <div class="box-sportlight-caption">
-                  <h5 class="box-sportlight-title"><a href="#">Natural stone</a></h5>
+          <div class="row row-30 justify-content-center">
+            <div class="col-md-12 col-lg-8">
+              <div class="oh">
+                <article class="box-sportlight wow slideInDown" style="visibility: visible; animation-delay: .1s">
+                  <a href="" class="box-sportlight-figure"><img src="images/spotlight-1-770x332.jpg" alt=""></a>
+                  <div class="box-sportlight-caption">
+                    <h5 class="box-sportlight-title"><a href="#">Natural stone</a></h5>
+                    <div class="box-sportlight-arrow"></div>
+                    <div class="box-sportlight-badge box-sportlight-new">New</div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="oh">
+                <article class="box-sportlight wow slideInRight" style="animation-delay: .1s">
+                  <a href="" class="box-sportlight-figure"><img src="images/spotlight-2-370x332.jpg" alt=""></a>
+                  <div class="box-sportlight-caption">
+                  <h5 class="box-sportlight-title"><a href="#">Hardwood</a></h5>
                   <div class="box-sportlight-arrow"></div>
-                  <div class="box-sportlight-badge box-sportlight-new">New</div>
-                </div>
-              </article>
+                  </div>
+                  <div class="box-sportlight-badge box-sportlight-sale">-30%</div>
+                </article>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="oh">
+                <article class="box-sportlight wow slideInUp" data-wow-delay=".1s" style="animation-delay: .1s;">
+                  <a href="" class="box-sportlight-figure"><img src="images/spotlight-3-370x332.jpg" alt=""></a>
+                  <div class="box-sportlight-caption">
+                  <h5 class="box-sportlight-title"><a href="#">Tile</a></h5>
+                  <div class="box-sportlight-arrow"></div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="oh">
+                <article class="box-sportlight wow slideInRight" data-wow-delay=".1s" style="animation-delay: .1s;">
+                  <a href="" class="box-sportlight-figure"><img src="images/spotlight-4-370x332.jpg" alt=""></a>
+                  <div class="box-sportlight-caption">
+                  <h5 class="box-sportlight-title"><a href="#">Carpet</a></h5>
+                  <div class="box-sportlight-arrow"></div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="oh">
+                <article class="box-sportlight wow slideInDown" data-wow-delay=".1s" style="animation-delay: .1s;">
+                  <a href="" class="box-sportlight-figure"><img src="images/spotlight-5-370x332.jpg" alt=""></a>
+                  <div class="box-sportlight-caption">
+                  <h5 class="box-sportlight-title"><a href="#">Laminate</a></h5>
+                  <div class="box-sportlight-arrow"></div>
+                  </div>
+                </article>
+              </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="oh-desktop">
-              <a href=""><img src="images/spotlight-2-370x332.jpg" alt=""></a>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="oh-desktop">
-              <a href=""><img src="images/spotlight-3-370x332.jpg" alt=""></a>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="oh-desktop">
-              <a href=""><img src="images/spotlight-4-370x332.jpg" alt=""></a>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="oh-desktop">
-              <a href=""><img src="images/spotlight-5-370x332.jpg" alt=""></a>
-            </div>
-          </div>
+        </div>
       </div>
     </section>
    </main>
@@ -164,16 +192,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
    <!-- Bootstrap JS -->
-  </div>
-  </body>
-   <script>
-        function openSearch() {
-          document.getElementById("myOverlay").style.display = "block";
-        }
+  <script>
+    function openSearch() {
+      document.getElementById("myOverlay").style.display = "block";
+    }
 
-        function closeSearch() {
-          document.getElementById("myOverlay").style.display = "none";
-        }
-        </script>
+    function closeSearch() {
+      document.getElementById("myOverlay").style.display = "none";
+    }
+  </script>
+  <script>
+  new WOW().init();
+  </script>
+  </div> <!-- /div Page -->
   </body>
 </html>
