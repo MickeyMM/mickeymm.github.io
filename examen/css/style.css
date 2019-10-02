@@ -2,6 +2,9 @@
 *, *::before, *::after{
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 .row{
   margin-top: 40px;
@@ -266,7 +269,7 @@ main .title-decoration-lines-content::after{
   transition: all .3s ease-in-out;
   }
 
-  .counter-creative {
+.counter-creative {
       text-align: center;
   }
   .counter-creative-number {
@@ -277,34 +280,26 @@ main .title-decoration-lines-content::after{
       text-transform: uppercase;
       letter-spacing: .025em;
   }
-  .counter-creative-number>* {
+.counter-creative-number>* {
       display: inline-block;
       vertical-align: top;
   }
-  .counter-creative-icon {
+.counter-creative-icon {
       margin-left: 10px;
       font-size: 42px;
       line-height: 1;
       color: #956e54;
   }
-  .icon::before {
-      position: relative;
-      display: inline-block;
-      font-weight: 400;
-      font-style: normal;
-      speak: none;
-      text-transform: none;
-  }
-  *+.counter-creative-title {
+*+.counter-creative-title {
       margin-top: 8px;
   }
 
-  .counter-creative-title {
+.counter-creative-title {
       font-weight: 400;
       letter-spacing: .075em;
       color: rgba(21,21,21,.6);
   }
-  .border-classic>div::before {
+.border-classic>div::before {
       position: absolute;
       content: '';
       left: 50%;
@@ -314,29 +309,11 @@ main .title-decoration-lines-content::after{
       height: 1px;
       background: #d7d7d7;
   }
+.thumbnail {
+     position: relative;
+ }
 
-  .thumbnail-mary {
-      text-align: center;
-      overflow: hidden;
-      transition: all .3s ease;
-  }
-  .thumbnail-sm {
-      max-width: 370px;
-      margin-left: auto;
-      margin-right: auto;
-  } 
-
-  .thumbnail {
-      position: relative;
-  }
-  .thumbnail-mary-figure {
-      display: block;
-  }
-  .thumbnail-mary-figure img {
-      width: 100%;
-      transition: all .3s ease;
-  }
-  .thumbnail-mary-caption {
+.thumbnail-mary-caption {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -350,7 +327,31 @@ main .title-decoration-lines-content::after{
       pointer-events: none;
       z-index: 1;
   }
-  .thumbnail-mary::after {
+.thumbnail-mary {
+      text-align: center;
+      overflow: hidden;
+      transition: all .3s ease;
+  }
+.thumbnail-sm {
+      max-width: 370px;
+      margin-left: auto;
+      margin-right: auto;
+  } 
+
+.thumbnail-mary-figure {
+      display: block;
+  }
+.thumbnail-mary-figure img {
+      width: 100%;
+      transition: all .3s ease;
+  }
+  .thumbnail-mary::before, .thumbnail-mary::after {
+        position: absolute;
+        content: '';
+        transition: inherit;
+        pointer-events: none;
+    }
+.thumbnail-mary::after {
       display: inline-block;
       top: 10px;
       right: 10px;
@@ -359,11 +360,23 @@ main .title-decoration-lines-content::after{
       border: 1px solid rgba(255,255,255,.5);
       z-index: 1;
   }
-  .thumbnail-mary::before, .thumbnail-mary::after {
-      position: absolute;
-      content: '';
-      transition: inherit;
-      pointer-events: none;
+.thumbnail-mary::before {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(25,24,24,.45);
+      z-index: 1;
+  }
+.thumbnail-mary-caption .icon img {
+    display: none;
+}
+.icon::before {
+  position: relative;
+  display: inline-block;
+  font-style: normal;
+  speak: none;
+  text-transform: none;
   }
 /* /MAIN STYLE MOBILE*/
 
@@ -388,7 +401,9 @@ footer .unit-body{
 footer .footer-contacts .unit .unit-body a{
   color: #fff;
 }
-
+footer .footer-contacts .unit .unit-body a:hover{
+  color: #efc4a3;
+}
 
 footer .icon{
   color: #f4c29a;
@@ -396,7 +411,7 @@ footer .icon{
 }
 
 footer a{
-  color: #fff;!important
+  color: #fff!important;
 }
 footer .footer-variant-content p{
   color: rgba(255,255,255,.3);
@@ -408,6 +423,7 @@ footer .footer-variant-content .unit .unit-body p{
 
 footer .footer-contacts{
   font-size: 15px;
+  text-align: left
 }
 
 .footer-variant *+.footer-contacts {
@@ -682,39 +698,12 @@ footer h5{
      overflow: hidden;
      transition: all .3s ease;
  }
- .thumbnail-sm {
-     max-width: 370px;
-     margin-left: auto;
-     margin-right: auto;
- }
- .thumbnail {
-     position: relative;
- }
+
  .thumbnail-mary:hover::before {
      opacity: 1;
      visibility: visible;
  }
- .thumbnail-mary::before {
-     opacity: 0;
-     visibility: hidden;
- }
- .thumbnail-mary::before {
-     top: 0;
-     right: 0;
-     bottom: 0;
-     left: 0;
-     background: rgba(25,24,24,.45);
-     z-index: 1;
- }
- .thumbnail-mary::before, .thumbnail-mary::after {
-     position: absolute;
-     content: '';
-     transition: inherit;
-     pointer-events: none;
- }
- .thumbnail-mary-figure {
-     display: block;
- }
+
  .thumbnail-mary:hover .thumbnail-mary-figure img {
     transform: none;
 }
@@ -722,10 +711,7 @@ footer h5{
     transform: scale(1.2);
     will-change: transform;
 }
-.thumbnail-mary-figure img {
-    width: 100%;
-    transition: all .3s ease;
-}
+
 .thumbnail-mary-caption {
     display: flex;
     flex-direction: column;
@@ -739,6 +725,10 @@ footer h5{
     left: 0;
     pointer-events: none;
     z-index: 1;
+}
+.thumbnail-mary::before {
+    opacity: 0;
+    visibility: hidden;
 }
 .thumbnail-mary:hover .icon,  .thumbnail-mary:hover .thumbnail-mary-title {
     opacity: 1;
@@ -762,22 +752,12 @@ footer h5{
 .thumbnail-mary-caption>* {
     pointer-events: auto;
 }
-.icon::before {
-    position: relative;
-    display: inline-block;
-    font-weight: 400;
-    font-style: normal;
-    speak: none;
-    text-transform: none;
-}
+
 .fl-bigmug-line-ico, [class^=fl-bigmug-line-]:before, [class*=" fl-bigmug-line-"]:before, [class^=fl-bigmug-line-]:after, [class*=" fl-bigmug-line-"]:after {
     font-family: fl-bigmug-line;
     font-size: inherit;
     font-weight: 400;
     font-style: normal;
-}
-.thumbnail-mary-caption .icon img {
-    display: none;
 }
 .thumbnail-mary-caption .icon:hover {
     color: rgba(255,255,255,.5);
@@ -816,23 +796,6 @@ footer h5{
     opacity: 0;
     visibility: hidden;
 }
-.thumbnail-mary::after {
-    display: inline-block;
-    top: 10px;
-    right: 10px;
-    bottom: 10px;
-    left: 10px;
-    border: 1px solid rgba(255,255,255,.5);
-    z-index: 1;
-}
-.thumbnail-mary::before, .thumbnail-mary::after {
-    position: absolute;
-    content: '';
-    transition: inherit;
-    pointer-events: none;
-}
-
-
 
   main .container{
     position: relative;
@@ -1099,7 +1062,6 @@ footer h5{
       background: #976f55;
   }
 
-  }
   .form-input {
       display: block;
       width: 100%;
