@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -18,7 +18,7 @@
     <!-- Teko Font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500%7CTeko:300,400,500%7CMaven+Pro:500" rel="stylesheet">
     <!-- /Teko Font -->
-    <title>27.09 - Last</title>
+    <title>30.09 - Last</title>
   </head>
   <body>
     <!-- PAGE HEADER -->
@@ -124,7 +124,7 @@
           <div class="row row-30 row-50 justify-content-center">
             <div class="col-md-12 col-lg-8">
               <div class="oh">
-                <article class="box-sportlight wow slideInDown" style="visibility: visible; animation-delay: .1s">
+                <article class="box-sportlight wow slideInDown animated" style="visibility: visible; animation-delay: .1s">
                   <a href="" class="box-sportlight-figure"><img src="images/spotlight-1-770x332.jpg" alt=""></a>
                   <div class="box-sportlight-caption">
                     <h5 class="box-sportlight-title"><a href="#">Natural stone</a></h5>
@@ -136,7 +136,7 @@
             </div>
             <div class="col-sm-6 col-lg-4">
               <div class="oh">
-                <article class="box-sportlight wow slideInRight" style="animation-delay: .1s">
+                <article class="box-sportlight wow slideInRight animated" style="animation-delay: .1s">
                   <a href="" class="box-sportlight-figure"><img src="images/spotlight-2-370x332.jpg" alt=""></a>
                   <div class="box-sportlight-caption">
                   <h5 class="box-sportlight-title"><a href="#">Hardwood</a></h5>
@@ -148,7 +148,7 @@
             </div>
             <div class="col-sm-6 col-lg-4">
               <div class="oh">
-                <article class="box-sportlight wow slideInUp" data-wow-delay=".1s" style="animation-delay: .1s;">
+                <article class="box-sportlight wow slideInUp animated" data-wow-delay=".1s" style="animation-delay: .1s;">
                   <a href="" class="box-sportlight-figure"><img src="images/spotlight-3-370x332.jpg" alt=""></a>
                   <div class="box-sportlight-caption">
                   <h5 class="box-sportlight-title"><a href="#">Tile</a></h5>
@@ -170,7 +170,7 @@
             </div>
             <div class="col-sm-6 col-lg-4">
               <div class="oh">
-                <article class="box-sportlight wow slideInDown" data-wow-delay=".1s" style="animation-delay: .1s;">
+                <article class="box-sportlight wow slideInDown animated" data-wow-delay=".1s" style="animation-delay: .1s;">
                   <a href="" class="box-sportlight-figure"><img src="images/spotlight-5-370x332.jpg" alt=""></a>
                   <div class="box-sportlight-caption">
                   <h5 class="box-sportlight-title"><a href="#">Laminate</a></h5>
@@ -313,7 +313,7 @@
                <div class="row row-0 justify-content-between">
                  <div class="col-sm-6 col-lg-4 col-xl-3">
                    <div class="oh-desktop">
-                     <div class="wow slideInRight" data-wow-delay="0s" style="visibility: visible; animation-delay: 0s; animation-name: slideInRight;">
+                     <div class="wow slideInRight animated" data-wow-delay="0s" style="visibility: visible; animation-delay: 0s; animation-name: slideInRight;">
                        <div class="footer-brand"><a href="index.html"><img src="images/logo-inverse-2-149x46.png" alt=""></a></div>
                        <p>We are an industry-leading flooring products and services provider. Let’s make your floor look spectacular!</p>
                        <ul class="footer-contacts d-inline-block d-md-block">
@@ -343,7 +343,7 @@
                  </div>
                  <div class="col-sm-6 col-lg-4 col-xl-4">
                    <div class="oh-desktop">
-                     <div class="inset-top-18 wow slideInDown" data-wow-delay="0s" style="visibility: visible; animation-delay: 0s; animation-name: slideInDown;">
+                     <div class="inset-top-18 wow slideInDown animated" data-wow-delay="0s" style="visibility: visible; animation-delay: 0s; animation-name: slideInDown;">
                        <h5 class="text-spacing-75">Newsletter</h5>
                        <p>Join our email list for tips and useful information.</p>
                        <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php" novalidate="novalidate">
@@ -369,7 +369,7 @@
                  </div>
                  <div class="col-lg-3 col-xl-3">
                    <div class="oh-desktop">
-                     <div class="inset-top-18 wow slideInLeft" data-wow-delay="0s" style="visibility: visible; animation-delay: 0s; animation-name: slideInLeft;">
+                     <div class="inset-top-18 wow slideInLeft animated" data-wow-delay="0s" style="visibility: visible; animation-delay: 0s; animation-name: slideInLeft;">
                        <h5 class="text-spacing-75">Gallery</h5>
                        <div class="row row-10 gutters-10">
                          <div class="col-6 col-sm-3 col-lg-6">
@@ -432,6 +432,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
    <!-- Bootstrap JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js" crossorigin="anonymous"></script>
+  <script src="js/wow.min.js"></script>
+  <script>new WOW().init();</script>
   <script>
     function openSearch() {
       document.getElementById("myOverlay").style.display = "block";
@@ -440,9 +443,6 @@
     function closeSearch() {
       document.getElementById("myOverlay").style.display = "none";
     }
-  </script>
-  <script>
-  new WOW().init();
   </script>
   </div> <!-- /div Page -->
   </body>
