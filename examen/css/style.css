@@ -162,8 +162,7 @@ header .navbar-nav .nav-item .nav-link.active{
 /* MAIN STYLE MOBILE*/
 
 main .carousel{
-  position: absolute;
-  top: 55px;
+  margin-top: 110px;
 }
 
 main .carousel-caption{
@@ -174,7 +173,7 @@ main .button{
     position: relative;
     font-size: 18px;
     border: 2px solid white;
-    padding: 17px 40px 15px;
+    padding: 17px 40px 20px;
     text-align: center;
     cursor: pointer;
     font-family: "Teko", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -213,6 +212,7 @@ main .button:hover{
 main .oh{
     position: relative;
     overflow: hidden;
+    margin-top: 40px;
   }
 
 main .box-sportlight{
@@ -334,11 +334,11 @@ main .title-decoration-lines-content::after{
 .unit {
     display: flex;
     flex: 0 1 100%;
-    margin-bottom: -30px;
+/*    margin-bottom: -30px;*/
     margin-left: -20px;
 }
 .product-2 .unit > * {
-    margin-bottom: 14px;
+    /*margin-bottom: 14px;*/
     margin-left: 20px;
 }
 .unit-left, .unit-right {
@@ -346,7 +346,7 @@ main .title-decoration-lines-content::after{
     max-width: 100%;
 }
 .unit > * {
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
     margin-left: 20px;
 }
 .product-figure {
@@ -588,6 +588,12 @@ main .title-decoration-lines-content::after{
   speak: none;
   text-transform: none;
   }
+
+.thumbnail-mary-caption a{
+  color: white;
+  font-size: 20px;
+}
+
 /* /MAIN STYLE MOBILE*/
 
 /* FOOTER STYLE MOBILE*/
@@ -606,7 +612,7 @@ footer .unit{
   margin-top: 10px;
 }
 footer .unit-body{
-  padding-left: 15px;
+  /*padding-left: 15px;*/
 }
 footer .footer-contacts .unit .unit-body a{
   color: #fff;
@@ -736,7 +742,7 @@ footer .button {
     left: 0;
     width: 101%;
     height: 101%;
-    background: #976f55;
+    background: white;
     z-index: -1;
     opacity: 0;
     transform: scale3d(.7,1,1);
@@ -812,6 +818,7 @@ footer h5{
   font-size: 34px;
   color: #fff;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 .rights{
   color: rgba(255,255,255,.3);
@@ -880,6 +887,14 @@ footer h5{
 
 /* Большие девайсы (десктопы, >= 992px) */
 @media (min-width: 992px) { 
+  
+  .product-2 .unit > * {
+      margin-bottom: 14px;
+  }
+
+  .unit > * {
+      /*margin-bottom: 30px;*/
+  }
 
   .border-classic-2>div::before {
       height: 100%;
