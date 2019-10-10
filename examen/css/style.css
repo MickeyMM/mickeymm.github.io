@@ -677,6 +677,7 @@ textarea.textarea-lg {
 
 .form-label.contact-us{
   color: black;
+  z-index: 1;
 }
 .button-contact-us{
     width: 100%;
