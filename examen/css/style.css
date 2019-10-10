@@ -328,6 +328,7 @@ main .title-decoration-lines-content::after{
     max-width: 270px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 55px;
 }
 .product-2 .unit {
     align-items: center;
@@ -706,7 +707,9 @@ textarea.textarea-lg {
   color: white;
 }
 
-
+.section-first{
+  padding-top: 50px;
+}
 
 
 
@@ -1155,8 +1158,11 @@ footer h5{
 
 
 
-}
+
 /* ---------MAIN DESCTOP------------ */
+.product{
+  margin-top: 0;
+}
 .product-2 {
     text-align: center;
 }
